@@ -13,6 +13,12 @@ The current construction is:
 
 4) service sends statements to a graph database (neo4j)
 
+REQUIREMENTS:
+
+1) neo4j (http://neo4j.com/)
+2) python (https://www.python.org/)
+3) py2neo (http://py2neo.org/)
+
 
 
 
