@@ -1,0 +1,4 @@
+inheat defined_by ""
+  e.g. {subject} inheat
+gavebirthto defined_by ""
+  e.g. {subject} gavebirthto {"calf", "heifer", "bull", identifier}
