@@ -3,6 +3,8 @@ Mobile App for Observations (MAO)
 
 MAO is a terse language for sending "subject, predicate, object" observations to a graph database.  MAO forms the foundation for easily sending observational data to a repository from a variety of sources (email, SMS, app, curl statements, web pages).
 
+An observation such as {subject} "inheat" can be sent to an email address.  The sender is the observer.  The date sent is the date of the observation.  The subject is defined by the user (an ID tag) and the descriptive property is a single word.  These terms can be expanded based on the context of the sender or the recipient.
+
 WORKFLOW:
 
 1) Setup identifier namespaces and relationships per project.  Configuration file format soon to come, likely adapting the configuration file syntax of the Biocode FIMS project (https://github.com/biocodellc/biocode-fims)
