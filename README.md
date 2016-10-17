@@ -1,11 +1,16 @@
 # mao
-Mobile App for Observations (MAO)
+Mobile App for Observations (MAO) -- alpha
 
-This is an ALPHA, experimental project!!
-
-MAO is a terse language for sending "subject, predicate, object" observations to a graph database.  MAO forms the foundation for easily sending observational data to a repository from a variety of sources (email, SMS, app, curl statements, web pages).
+MAO adopts a very terse language for sending "subject, predicate, object" observations to a graph database.  Observational data can be sent via email, SMS, app, curl statements, or web interfaces.
 
 An observation such as {subject} "inheat" can be sent to an email address.  The sender is the observer.  The date sent is the date of the observation.  The subject is defined by the user (an ID tag) and the descriptive property is a single word.  These terms can be expanded based on the context of the sender or the recipient.
+
+Subject: Thing: Prefix (drop-down) / Suffix (text)
+Predicate:
+     Has State OR Interaction (Drop-down interactions)
+Object:
+    If Predicate = Has State (Drop-down States)
+    if Predicate = Interaction, Prefix (drop-down) / Suffix (text)
 
 WORKFLOW:
 
