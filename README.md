@@ -8,7 +8,7 @@ On the name "Mao": The name signifies the potential for bold transformations and
 
 ## Language Overview 
 
-Machines understand identifiers and logical constructs.  Humans understand human speech. MAO is a construct which bridges the gap, lowering the barriers for humans to interact with machines.  The MAO language is composed of of [heirarchical identifiers](#heirarchical-identifiers), dates, and literals (any text string available which is available in one more [configurable dictionary](#configurable-dictionary)).  MAO understands simple sentences built on RDF triples, consisting of subjects, predicates, and objects, where:
+The MAO language is composed of of [heirarchical identifiers](#heirarchical-identifiers), dates, and literals (any text string available which is available in one more [configurable dictionary](#configurable-dictionary)).  MAO understands simple sentences built on RDF triples, consisting of subjects, predicates, and objects, where:
 
  * {subject} are a [heirarchical identifier](#heirarchical-identifiers)
 
