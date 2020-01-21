@@ -2,13 +2,13 @@
 
 MAO is a "Mobile App for Observations" and is a A DRAFT specification for a human to machine language.   
 
-The idea for a human to machine language comes from the idea that well structured information about the natural world, primarily coming from observations should not be confined to user interfaces but should instead should arise as a natural form of language. As a (part-time) farmer, my time in the field is extremely valuable and to make the most of my observations in the field, I don't want to constrain my recorded observations to sessions demanding my later interaction with an interface or which demands me to think in terms of a 2 dimensional array (e.g. spreadsheet) or even a mobile app.  My hands are dirty, i can't type on a mobile phone, and i need to be mostly unecumbered by technology in that moment.  However, if i can speak and/or understand a language which can also be understood by machines that can retain the context, I can be free to observe the world around me quickly and accurately, referring to objects around me in a manner that has contextual meaning for myself as well as anyone in the world.  As a language construct, MAO can easily be extended to other mobile applications and provide context about the specific notions of my anyone's personal world, which in turn provides the ability to instantly provide information to a global distributed database.
+The idea for a human to machine language comes from the idea that well structured information about the natural world, primarily coming from observations should not be confined to user interfaces but should instead should arise as a natural form of language.  For example, as a (part-time) farmer, my time in the field is extremely valuable and to make the most of my observations in the field, I don't want to constrain my recorded observations to sessions demanding my later interaction with an interface or which demands me to think in terms of some arbitrary and bespoke structure built to fit the machine.  My hands are dirty, i can't type, and i need to be mostly unecumbered by technology in that moment.  If i can speak and/or understand a language which can also be understood by machines that can retain context, I can be free to observe the world around me quickly and accurately, referring to objects around me in a manner that has contextual meaning for myself as well as anyone in the world and then communicate that to one or more mediums of my choosing.  As a language construct, MAO can extend to any mobile applications and provide context about the specific notions of anyone's personal world, which in turn provides the ability to instantly provide information to a global distributed database.
 
 On the name "Mao": The name signifies the potential for bold transformations and organization of human society, and is a memorable and easily pronouncable 3 letter acronym.  However, the name "Mao"... yeah... all of the horrible effects of Maoist policy which, for me, makes me think about the responsibility we have in using technology and thinking about downstream consequences.   A note of caution or a super unfortunate name choice?
 
 ## Language Overview 
 
-MAO is meant to be a terse language which humans can easily learn and machines can easily parse. Machines understand identifiers and logical constructs.  Humans understand human human speach.  The MAO language is composed of of [heirarchical identifiers](#heirarchical-identifiers), dates, and literals (any text string available which is available in one more [configurable dictionary](#configurable-dictionary)).  MAO understands simple sentences built on RDF triples, consisting of subjects, predicates, and objects, where:
+MAO is meant to be a terse language which humans can easily learn and machines can easily parse. Machines understand identifiers and logical constructs.  Humans understand human speech.  The MAO language is composed of of [heirarchical identifiers](#heirarchical-identifiers), dates, and literals (any text string available which is available in one more [configurable dictionary](#configurable-dictionary)).  MAO understands simple sentences built on RDF triples, consisting of subjects, predicates, and objects, where:
 
  * {subject} are a [heirarchical identifier](#heirarchical-identifiers)
 
@@ -17,6 +17,7 @@ MAO is meant to be a terse language which humans can easily learn and machines c
  * {object} can be one of a: [configurable dictionary term](#configurable-dictionary), date, URI, or [heirarchical identifiers](#heirarchical-identifiers)
  
 MAO statements may or may not reside in a database.  As language is spoken and interpreted it may not always be necessary to record it: thus, databasing the language itself is outside this specification.  However, MAO is ultimately designed to facilitate recording all statements into database format.  
+
  
 ## Heirarchical Identifiers
 
@@ -44,4 +45,16 @@ Service for validating all MAO statements, which includes:
  * identifier syntax -- resolvable, context defined, parseable local identifier
  * term lists (needs further definition).
  
+## Example MAO statements
+```E28 "gave birth to" 201```
+
+In my language, "E28" is a cow. it is a local identifier which will be prefixed by an {identifer root} which identifiers this thing as about cows.  My {identifier root} could just as easily be about cardinal fish, airplanes, or employees.  I also have a short-list of predicates which have some global meaning for my work.  By constraining the terms that i use personally for a particular study (and my terms can be study-specific) I can easily record meaning that can later be turned into. Saying "gave birth to" i can infer that the object of the statement "201" is also a cow.
+
+```201 "has sex" female```
+
+I can construct further statements about the object of the first statement and assign roles to those subjects.  female is a term that i can register as an available term of the predicate "has sex".  "sex" would be defined as a term that has a particular controlled vocabularly and which available terms would be reference an ontology that describes the nature of what is "female".  
+
+```201 "born on" 2020-01-20```
+
+Finally, i can assign dates for particular actions.  The predicate "born on" would require an object of a date to be provided in this context.
 
